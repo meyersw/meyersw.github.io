@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* William Meyers
+CIS-130-W01 SU24
+Final Project
+July 26, 2024 
+index.html */
+
+header>h1{
+    display: block;
+    font-size: 10vw;
+    text-align: center;
+    margin: 1vw;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    font-variant: small-caps;
+}
+
+nav>ul{
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+nav>ul>li{
+    display: inline-block;
+    margin: 1vw;
+    padding: 1vw;
+    text-align: center;
+    border: 1px solid;
+    width: 12vw;
+
+}
+
+ul>a{
+    text-decoration: none;
+}
+
+footer{
+    font-variant: small-caps;
+    text-align: center;
+    margin: 1vw;
+    padding: 1vw;
+    text-align: center;
+    border: 1px solid;
+}
