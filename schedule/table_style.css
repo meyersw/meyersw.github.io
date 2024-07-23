@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+   Tables Style Sheet
+   Author:  William Meyers
+   Date:    2024-06-24
+   Filename:table_style.css
+
+   Color Scheme
+   Background #E87A5D
+   Borders/Text #3B5BA5
+   Inside of Table #F3B941
+   Table First Row/ Col #e87b5d65
+*/
+
+/* Page Styles */
+
+body{
+   color: #3B5BA5;
+   background-color: #E87A5D;
+}
+
+header{
+   font-variant: small-caps;
+   background-color: #F3B941;
+   text-align: center;
+   border-width: 1px;
+   border-radius: 300px;
+   width: 100%;
+}
+
+/* Table Styles */
+
+table {
+   background: #F3B941;
+   border: 5px outset #3B5BA5;
+   border-collapse: collapse;
+   font-size: 1em;
+   width: 100%;
+   text-align: center;
+   color: #3B5BA5;
+}
+
+/* Table Cell Styles */
+
+table th, table td {
+   border: 1px solid #3B5BA5;
+}
+
+/* Table Caption Styles */
+
+table>caption{
+   color: #3B5BA5;
+   text-align: left;
+   caption-side: bottom;
+}
+
+/* Row Group Styles */
+
+thead{
+   background-color: #e87b5d65;
+}
+
+
+/* Column Group Styles */
+
+col#firstCol{
+   background: #e87b5d65;
+   width: 15%;
+   }
+
+   col.dayCols{
+      background: #F3B941;
+      width: 17%;
+   }
+
+/* Table Footer Styles */
+
+table>tfoot{
+   color: #3B5BA5;
+   text-align: right;
+}
