@@ -8,6 +8,7 @@ index.html */
 
 body {
     font-size: 1em;
+    background-color: lightblue;
 }
 
 header>h1 {
@@ -38,9 +39,10 @@ nav>ul>li {
     width: 20%;
 }
 
-nav>ul>li:hover {
+nav>ul>li:hover,ul>li>a:hover {
     background-color: red;
     color: white;
+    border-color: lightblue;
 }
 
 a {
@@ -48,7 +50,7 @@ a {
     color: inherit;
 }
 
-a:visited{
+a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -62,4 +64,25 @@ footer {
     text-align: center;
     text-align: center;
     border: 1px solid;
+}
+
+.aboutme {
+    display: block;
+}
+
+.articleme {
+    background-color: red;
+    border: 1px solid;
+    padding: 1em;
+    margin: 1em;
+}
+
+.wireframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .aboutme {
+        display: flex;
+    }
 }
