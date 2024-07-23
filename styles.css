@@ -6,9 +6,26 @@ Final Project
 July 26, 2024 
 index.html */
 
+
+:root {
+    --primary: #8d99ae;
+    --dark: #2b2d42;
+    --light: #edf2f4;
+    --highlight: #ef233c;
+}
+
+.size-wrapper {
+    min-width: 200px;
+}
+
 body {
     font-size: 1em;
-    background-color: lightblue;
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+header {
+    width: 100%;
 }
 
 header>h1 {
@@ -16,6 +33,8 @@ header>h1 {
     font-size: 3em;
     text-align: center;
     margin: 1em;
+    width: 100%;
+    margin: 0;
 }
 
 h1 {
@@ -33,16 +52,19 @@ nav>ul {
 }
 
 nav>ul>li {
-    display: inline-block;
+    display: block;
+    margin: auto;
     text-align: center;
     border: 1px solid;
-    width: 20%;
+    width: 100%;
+    padding: 1%;
 }
 
-nav>ul>li:hover,ul>li>a:hover {
-    background-color: red;
-    color: white;
-    border-color: lightblue;
+nav>ul>li:hover,
+ul>li>a:hover {
+    background-color: var(--highlight);
+    color: var(--light);
+    border-color: var(--dark);
 }
 
 a {
@@ -71,7 +93,7 @@ footer {
 }
 
 .articleme {
-    background-color: red;
+    background-color: var(--light);
     border: 1px solid;
     padding: 1em;
     margin: 1em;
@@ -84,5 +106,12 @@ footer {
 @media screen and (min-width: 600px) {
     .aboutme {
         display: flex;
+    }
+
+    nav>ul>li {
+        display: inline-block;
+        text-align: center;
+        border: 1px solid;
+        width: 20%;
     }
 }
