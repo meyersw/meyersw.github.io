@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae707072e6.js" crossorigin="anonymous"></script>
+    <title>Bait -- Howard's Lakeside General Store</title>
+    <!-- 
+    LiveBaitShop
+    CIS-130-W01 SU 24
+    William Meyers
+    2024-07-04
+    bait.html
+    -->
+</head>
+
+<body>
+    <header>
+        <img src="pier.jpg" alt="">
+        <h1>Howard's Lakeside General Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bait.html">Order&nbsp;Bait</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Now offering curbside pickup -- Place your order below</h1>
+    <h2>*Bait availability based on season*</h2>
+
+    <form id="baitOrder" action="thankyou.html" method="get">
+        <div class="baitOrderContainer">
+        <fieldset id="contactInfo">
+            <legend>Contact&nbsp;Information</legend>
+            <div class="input">
+                <label for="firstName">First&nbsp;Name</label><br>
+                <input name="firstName" id="firstName" type="text" placeholder="first name" required><br>
+            </div>
+            <div class="input">
+                <label for="lastName">Last&nbsp;Name</label><br>
+                <input name="lastName" id="lastName" type="text" placeholder="last name" required><br>
+            </div>
+            <div class="input">
+                <label for="mail">E-mail</label><br>
+                <input name="Email" id="mail" type="email" placeholder="you@otc.edu" required><br>
+            </div>
+            <div class="input">
+                <label for="phone">Phone&nbsp;Number</label><br>
+                <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"><br>
+            </div>
+        </fieldset>
+        <fieldset id="liveBait">
+            <legend>Live&nbsp;Bait</legend>
+            <div class="input">
+                <input type="number" id="redworms" name="redworms" min="0" max="10" placeholder="0">
+                <label for="redworms"><br>Redworms<br>$3.45/24&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="nightCrawlers" name="nightCrawlers" min="0" max="10" placeholder="0">
+                <label for="nightCrawlers"><br>Night&nbsp;Crawlers<br>$2.80/12&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="glowWorms" name="glowWorms" min="0" max="10" placeholder="0">
+                <label for="glowWorms"><br>Glow&nbsp;Worms<br>$3.25/12&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="waxWorms" name="waxWorms" min="0" max="10" placeholder="0">
+                <label for="waxWorms"><br>Wax&nbsp;Worms<br>$2.80/50&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="leeches" name="leeches" min="0" max="10" placeholder="0">
+                <label for="leeches"><br>Leeches<br>4.00/12ct.</label>
+            </div>
+        </fieldset>
+        <fieldset id="liveFish">
+            <legend>Live&nbsp;Fish</legend>
+            <div class="input">
+                <input type="number" id="crappieMinnows" name="crappieMinnows" min="0" max="10" placeholder="0">
+                <label for="crappieMinnows"><br>Crappie&nbsp;Minnows<br>2.00/12&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="bassMinnows" name="bassMinnows" min="0" max="10" placeholder="0">
+                <label for="bassMinnows"><br>Bass&nbsp;Minnows<br>2.20/12&nbsp;ct.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="chubbs" name="chubbs" min="0" max="10" placeholder="0">
+                <label for="chubbs"><br>Chubbs<br>2.00/ea.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="goldfishSmall" name="goldfishSmall" min="0" max="10" placeholder="0">
+                <label for="goldfishSmall"><br>Goldfish-Small<br>2.00/ea.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="goldfishLarge" name="goldfishLarge" min="0" max="10" placeholder="0">
+                <label for="goldfishLarge"><br>Goldfish-Large<br>3.00/ea.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="catfishSmall" name="catfishSmall" min="0" max="10" placeholder="0">
+                <label for="catfishSmall"><br>Catfish-Small<br>1.50/ea.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="catfishMedium" name="catfishMedium" min="0" max="10" placeholder="0">
+                <label for="catfishMedium"><br>Catfish-Medium<br>3.00/ea</label>
+            </div>
+            <div class="input">
+                <input type="number" id="catfishLarge" name="catfishLarge" min="0" max="10" placeholder="0">
+                <label for="catfishLarge"><br>Catfish-Large<br>4.50/ea</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="coldBait">
+            <legend>Cold&nbsp;Bait</legend>
+            <div class="input">
+                <input type="number" id="skipjack" name="skipjack" min="0" max="10" placeholder="0">
+                <label for="skipjack"><br>Skipjack<br>8.00</label>
+            </div>
+            <div class="input">
+                <input type="number" id="shad" name="shad" min="0" max="10" placeholder="0">
+                <label for="shad"><br>Shad<br>6.00</label>
+            </div>
+            <div class="input">
+                <input type="number" id="straberryLiver" name="straberryLiver" min="0" max="10" placeholder="0">
+                <label for="straberryLiver"><br>Strawberry&nbsp;Liver<br>3.00/tub</label>
+            </div>
+            <div class="input">
+                <input type="number" id="cherryLiver" name="cherryLiver" min="0" max="10" placeholder="0">
+                <label for="cherryLiver"><br>Cherry Liver<br>3.00/tub</label>
+            </div>
+            <div class="input">
+                <input type="number" id="liver" name="liver" min="0" max="10" placeholder="0">
+                <label for="liver"><br>Liver<br>3.00/tub.</label>
+            </div>
+            <div class="input">
+                <input type="number" id="shrimp" name="shrimp" min="0" max="10" placeholder="0">
+                <label for="shrimp"><br>Shrimp<br>4.50/tub</label>
+            </div>
+            <div class="input">
+                <input type="number" id="corn" name="corn" min="0" max="10" placeholder="0">
+                <label for="corn"><br>Corn<br>1.00/tub</label>
+            </div>
+        </fieldset>
+        </div>
+        <div id="buttons">
+            <input type="submit" value="Submit My Order">
+            <input type="reset" value="Cancel">
+        </div>
+    </form>
+    <br>
+    <footer>
+        Howard's&nbsp;Lakeside&nbsp;General&nbsp;Store&bull;1919&nbsp;Croft&nbsp;Rd&bull;Springfield&nbsp;&nbsp;Ohio&nbsp;45503
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      Assignment:  Fun For Fitness Club
+      24/SU-CIS-130-W01
+      Author: William Meyers
+      Date:   2024-06-24
+      Filename:   info.html
+
+      logo.jpg created with Microsoft CoPilot 
+      Content credentials
+      Generated with AI ∙ June 22, 2024 at 7:31 AM
+      https://copilot.microsoft.com/images/create/-1066098787/2-6676c420f3214cefb39fad448b1a462b?id=bh0t5iQ5DLt%2fTyRJOyABLw%3d%3d&view=detailv2&idpp=genimg&idpclose=1&genimgbce=1&thId=OIGBCE4..waug9HJwTjP4oR6NoG3&FORM=SYDBIC
+   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Contact Us: Fun For Fitness Club</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="logo.jpg" alt="Fit for Fun Logo"></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="info.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <form id="infoRequest" action="thankyou.html" method="get">
+        <fieldset id="contactInfo">
+            <legend>Contact Information</legend>
+            <!--Text field  required field: First Name-->
+            <label for="firstName">First Name</label>
+            <input name="firstName" id="firstName" type="text" placeholder="first name" required>
+            <!--text field  required field : Last Name-->
+            <label for="lastName">Last Name</label>
+            <input name="lastName" id="lastName" type="text" placeholder="last name" required>
+            <!--input box: email-->
+            <label for="mail">E-mail</label>
+            <input name="Email" id="mail" type="email" placeholder="you@otc.edu" required>
+            <!--input box: phone -->
+            <label for="phone">Phone Number</label>
+            <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"><br>
+            <!--select list: Best way to reach: choices are : email, phone, owl and any additional methods you deem appropriate-->
+            <label for="contactPref">How should we get in touch with you?</label>
+            <select name="contactPref" id="contactPref">
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Owl">Owl</option>
+                <option value="Text">Text</option>
+                <option value="Billboard">Billboard</option>
+                <option value="Telepathy">Telepathy</option>
+                <option value="Yodelling">Yodelling</option>
+            </select>
+        </fieldset>
+        <fieldset id="cChoice">
+            <legend>What classes are you interested in?</legend>
+            <!--check boxes with all the classes offered, allowing user to select all classes interested in-->
+            <input name="crossTraining" id="crossTraining" value="yes" type="checkbox">
+            <label for="crossTraining">Cross Training</label>
+            <input name="sprint" id="sprint" value="yes" type="checkbox">
+            <label for="sprint">Sprint</label>
+            <input name="spin" id="spin" value="yes" type="checkbox">
+            <label for="spin">Spin</label><br>
+            <input name="bodyPump" id="bodyPump" value="yes" type="checkbox">
+            <label for="bodyPump">BodyPump</label>
+            <input name="bodyCombat" id="bodyCombat" value="yes" type="checkbox">
+            <label for="bodyCombat">BodyCombat</label>
+            <input name="stepInterval" id="stepInterval" value="yes" type="checkbox">
+            <label for="stepInterval">Step Interval</label><br>
+            <input name="advancedCrossTraining" id="advancedCrossTraining" value="yes" type="checkbox">
+            <label for="advancedCrossTraining">Advanced Cross Training</label>
+            <input name="mixxedFit" id="mixxedFit" value="yes" type="checkbox">
+            <label for="mixxedFit">MixxedFIT</label>
+            <input name="zumba" id="zumba" value="yes" type="checkbox">
+            <label for="zumba">Zumba</label>
+        </fieldset>
+        <!--radio boxes: am or pm  allows user to enter their preferred class time -->
+        <fieldset id="AMPM">
+            <legend>Do you prefer morning or evening classes? (Note not all classes are available mornings and evenings.
+                See <a href="classes.html">class schedule</a> for details.)</legend>
+            <label for="AM">Mornings</label>
+            <input name="AMPM" id="AM" value="AM" type="radio" required>
+            <label for="PM">Evenings</label>
+            <input name="AMPM" id="PM" value="PM" type="radio" required>
+        </fieldset>
+        <!--Any additional fields you would like to add-->
+        <fieldset id="addInfo">
+            <legend>Tell us more about you.</legend>
+            <p>What is your current fitness level?</p>
+            <label for="fit1">Beginner</label>
+            <input name="fitLevel" id="fit1" value="Beginner" type="radio"><br>
+            <label for="fit2">Intermediate</label>
+            <input name="fitLevel" id="fit2" value="Intermediate" type="radio"><br>
+            <label for="fit3">Advanced</label>
+            <input name="fitLevel" id="fit3" value="Advanced" type="radio"><br>
+            <label for="fit4">Godlike</label>
+            <input name="fitLevel" id="fit4" value="Godlike" type="radio"><br>
+            <br>
+            <input name="instructor" id="instructor" value="yes" type="checkbox">
+            <label for="instructor">Are you interested in becoming an instructor?</label>
+            <p>Do you have anything to add or questions?</p>
+            <textarea name="addional" id="addional" placeholder="Do you have anything to add or questions?"></textarea>
+        </fieldset>
+        <!-- A Submit button that sends the form data to a new page-->
+        <div id="buttons">
+            <input type="submit" value="Submit My Request">
+            <input type="reset" value="Cancel">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

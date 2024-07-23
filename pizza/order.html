@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+       Cheech's Flexible Pizza Parlor
+       Author: William Meyers
+       Date:   2024-07-08
+       Filename: order.html
+      -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Order - Tony's Heroic Pizza Parlor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tony’s Heroic Pizzeria</h1>
+        <!--
+        Both pages will have the same navigation across the top: Home, Order Online, Menu, Our Location (only the order and the menu links will be operational).
+        They must use flexboxes to display in blocks alongside each other.
+When the viewport shrinks below 568px, the flexboxes (navigation items) will become stacked on top of each other. 
+        -->
+        <img src="logo.jpg" alt="Cheech's Flexible Pizza Parlor logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="order.html">Order&nbsp;Online</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Our&nbsp;Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--
+Create a form to take a customer's order. Include at the minimum:
+
+TWO COLUMNS: USE FLEXBOXES to create the columns. NO CREDIT WILL BE GIVEN FOR FLOATED COLUMNS. Floating isn't a good tool for columns, which is why we are learning flexboxes!
+Column 1:
+Customer First Name
+Customer Last Name
+Customer Phone
+Drop down box with 6 pizza choices
+A drop down (or input type="number") for the number of pizzas to order.
+Include a submit button, although your form does not need to submit to the thank you page unless you want the practice
+-->
+    <div class="column-container">
+        <div id="column1">
+            <h2>Place your order</h2>
+            <form id="pizzaOrder" action="thankyou.html" method="get">
+                <fieldset id="contactInfo">
+                    <legend>Contact Information</legend>
+                    <label for="firstName">First Name</label><br>
+                    <input name="firstName" id="firstName" type="text" placeholder="first name" required><br>
+                    <label for="lastName">Last Name</label><br>
+                    <input name="lastName" id="lastName" type="text" placeholder="last name" required><br>
+                    <label for="mail">E-mail</label><br>
+                    <input name="Email" id="mail" type="email" placeholder="you@otc.edu" required><br>
+                    <label for="phone">Phone Number</label><br>
+                    <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"><br>
+                </fieldset>
+                <fieldset id="order">
+                    <legend>What can we make for you?</legend>
+                    <select name="pizzaType" id="pizzaType">
+                        <option value="Veggie">The Veggie Delight</option>
+                        <option value="Meat">The Meat Lover’s Dream</option>
+                        <option value="Pesto">The Pesto Paradise</option>
+                        <option value="BBQ">The BBQ Bonanza</option>
+                        <option value="Hawaiian">The Hawaiian Heatwave</option>
+                        <option value="Margherita">The Margherita Magic</option>
+                    </select>
+                    <br><label for="quantity">Quantity (between 1 and 10):</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10">
+                    <br>
+                    <label for="Delivery">Delivery</label>
+                    <input name="DCO" id="Delivery" value="Delivery" type="radio" required>
+                    <label for="Carryout">Carryout</label>
+                    <input name="DCO" id="Carryout" value="Carryout" type="radio" required>
+                </fieldset>
+                <div id="buttons">
+                    <input type="submit" value="Submit My Order">
+                    <input type="reset" value="Cancel">
+                </div>
+            </form>
+        </div>
+        <!--
+Column 2:
+Customer Testimonial
+Social Media links
+Whatever you deem extra to fill the space and make it look polished and balanced
+These two columns should stack when the viewport is less than 578 px 
+-->
+        <div id="column2">
+            <article id="testimonial">
+                <h2>Our customers say</h2>
+                <P><strong>“Best Pizza in Town!”</strong> - “I’ve tried pizza from many places, but nothing compares to
+                    Tony's. Their unique blend of cheeses and the flexible options for customizing your own pizza make
+                    them the best in town. Highly recommend!”</P>
+            </article>
+            <article id="social">
+                <h2>Follow us and get 10% off!</h2>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="instagram.png"
+                        alt="instagram"></a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><img src="tiktok.png"
+                        alt="tiktok"></a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="twitterx.png"
+                        alt="twitterx"></a>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

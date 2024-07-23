@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+    responsive style sheet
+    Author: William Meyers
+    Filename: responsive.css
+*/
+
+
+@media screen and (min-width: 500px) {
+    div#container {
+        columns: 2;
+    }
+
+    .headerImageAndText {
+        display: none;
+    }
+
+    img {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .smallScreenHeader {
+        display: none;
+    }
+
+    .headerImageAndText {
+        display: block;
+    }
+
+    img {
+        display: inline;
+    }
+
+    div#container {
+        columns: 3;
+    }
+}
+

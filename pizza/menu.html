@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+       Cheech's Flexible Pizza Parlor
+       Author: William Meyers
+       Date:   2024-07-08
+   
+       Filename: menu.html
+      -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Menu - Tony's Heroic Pizza Parlor</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Tony’s Heroic Pizzeria</h1>
+        <!--
+        Both pages will have the same navigation across the top: Home, Order Online, Menu, Our Location (only the order and the menu links will be operational).
+
+        They must use flexboxes to display in blocks alongside each other.
+When the viewport shrinks below 568px, the flexboxes (navigation items) will become stacked on top of each other. 
+        -->
+
+        <img src="logo.jpg" alt="Cheech's Flexible Pizza Parlor logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="order.html">Order&nbsp;Online</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Our&nbsp;Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--
+Here you will display 6 pizzas.
+
+Each of these pictures should include a small description of the pizza type.
+Each of these groups (image and descriptions) should be displayed in a row / column format (as seen in the walk-through video) using flex boxes. NO CREDIT WILL BE GIVEN FOR FLOATING these as columns. 
+When the viewport is less than 568pixels, the images/descriptions should stack on top of each other
+-->
+    <h1>Our Menu</h1>
+    <section id="menu">
+        <div class="flex-container">
+            <div id="pie1">
+                <img src="veggie.jpg" alt="The Veggie Delight">
+                <h2>The Veggie Delight</h2>
+                <p>A mix of bell peppers, onions, mushrooms, olives, and tomatoes.</p>
+            </div>
+            <div id="pie2">
+                <img src="meat.jpg" alt="The Meat Lover’s Dream">
+                <h2>The Meat Lover’s Dream</h2>
+                <p>Loaded with pepperoni, sausage, ham, bacon, and ground beef.</p>
+            </div>
+            <div id="pie3">
+                <img src="pesto.jpg" alt="The Pesto Paradise">
+                <h2>The Pesto Paradise</h2>
+                <p>Pesto sauce, cheese, tomatoes, bell peppers, red onions, black olives and artichoke hearts.</p>
+            </div>
+            <div id="pie4">
+                <img src="bbq.jpg" alt="The BBQ Bonanza">
+                <h2>The BBQ Bonanza</h2>
+                <p>Grilled chicken, BBQ sauce, red onions, and cilantro.</p>
+            </div>
+            <div id="pie5">
+                <img src="hawaiian.jpg" alt="The Hawaiian Heatwave">
+                <h2>The Hawaiian Heatwave</h2>
+                <p>Ham, pineapple, mozzarella cheese and jalapenos (or if you are brave enough, ghost peppers).</p>
+            </div>
+            <div id="pie6">
+                <img src="margherita.jpg" alt="Margherita">
+                <h2>Margherita</h2>
+                <p>Classic pizza with fresh mozzarella, tomatoes, and basil.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

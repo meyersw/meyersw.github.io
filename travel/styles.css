@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*
+    style sheet
+    Author: William Meyers
+    Filename: styles.css
+
+    color pallate
+    Very soft orange: #ecc5a2 
+    Grayish cyan: #a3b6ba 
+    Dark moderate cyan: #5e9bac 
+    Dark moderate orange: #a76e49 
+    Very dark grayish cyan: #4b5c5d
+*/
+
+/* body Styles */
+
+body {
+    background-color: #ecc5a2;
+    color: #4b5c5d;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #4b5c5d;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #4b5c5d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #5e9bac;
+}
+
+/* Header Styles */
+
+/* Container holding the image and the text */
+.headerImageAndText {
+    position: relative;
+    text-align: center;
+    color: #4b5c5d;
+    display: none;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 10px;
+    font-size: 130%;
+    width: 27%;
+    background-color: #ecc5a2;
+    border-radius: 150px;
+}
+
+
+
+/* depreciated header styles replaced with text over image/*
+/*
+body>header {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #4b5c5d;
+}
+/*
+/* Footer Styles */
+
+body>footer {
+    float: none;
+    display: inline;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px;
+    border-style: solid;
+    border-color: #a76e49;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Navigation Styles */
+
+body>nav {
+    float: none;
+    display: inline;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px;
+    border-style: solid;
+    border-color: #a76e49;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 130%;
+}
+
+body>nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: #4b5c5d;
+}
+
+body>nav a:visited {
+    text-decoration: none;
+    color: #4b5c5d;
+}
+
+body>nav a:hover {
+    text-decoration: none;
+    color: #5e9bac;
+}
+
+/* Content Styles */
+
+div#container {
+    width: 95%;
+    columns: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#todo,
+div#tostay,
+div#toeat {
+    width: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: #a76e49;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+div>h1,
+div>h2 {
+    text-align: center;
+}
+
+/* Image  Styles */
+
+img {
+    width: 100%;
+    display: none;
+}

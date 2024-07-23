@@ -1,0 +1,89 @@
+/* William Meyers
+BootStrap B&B
+CIS-130-W01 SU24
+July,22 2024
+styles.css */
+
+
+.pageContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.cardContainer,
+.formAndMapContainer {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    margin: 5%;
+    border-radius: 5px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.amenitiesContainer {
+    border: 1px solid;
+    padding: 2vh;
+}
+
+.footerContainer {
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid;
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.formAndMapContainer {
+    display: inline-block;
+    margin: auto;
+}
+
+.formContainer,
+.mapContainer {
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.formContainer>p {
+    text-align: left;
+}
+
+.btn {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+@media screen and (max-width: 700px){
+    .formContainer,
+    .mapContainer {
+        width: 100%;
+        display: inline-block;
+        padding: 1em;
+        text-align: center;
+    
+    }
+}

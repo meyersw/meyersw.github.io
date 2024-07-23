@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/*
+   FunForFitnessClub Stylesheet
+   Author:  William Meyers
+   Date:    2024-06-24
+   Filename:style.css
+
+   Color Scheme
+   Text Hightlight: Magenta
+   Box Highlight: Orange
+   Background: Aqua
+
+
+*/
+
+/* Body Styles */
+
+body {
+    background-color: aqua;
+}
+
+/* Heading Styles */
+
+h1 {
+    color: magenta;
+    text-align: center;
+}
+
+h2 {
+    color: magenta;
+    text-align: center;
+}
+
+h3 {
+    color: magenta;
+    text-align: center;
+}
+
+/* Img Styles */
+
+img#logo {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#images {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* display 3 images in a row */
+.column {
+    float: left;
+    width: 33.33%;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Nav Styles */
+
+nav {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    float: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+nav li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+}
+
+nav>ul a:link {
+    text-decoration: none;
+    color: magenta;
+}
+
+nav>ul a:visited {
+    text-decoration: none;
+    color: magenta;
+}
+
+nav>ul a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+/* Table Styles */
+
+table {
+    width: 100%;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    vertical-align: text-top;
+    border: 1px solid aqua;
+}
+
+th {
+    border: 1px solid aqua;
+    color: magenta;
+}
+
+/* Form Styles */
+
+form {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    float: none;
+    padding: 10px;
+}
+
+form>fieldset {
+    margin-bottom: 25px;
+}
+
+/* button Styles */
+
+div#buttons {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    padding: 10px;
+}
+
+/* Class List Styles */
+
+section#classes {
+    background-color: orange;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+section#classes dl {
+    columns: 3;
+}
+
+section#classes dt {
+    color: magenta;
+    font-variant: small-caps;
+}
+
+section#classes dd {
+    break-before: avoid;
+}
+
+/* Text Area Styles */
+
+textarea {
+    width: 400px;
+    height: 60px;
+}
+
+/* article  Styles */
+
+article {
+    background-color: orange;
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}

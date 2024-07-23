@@ -1,0 +1,165 @@
+@charset "utf-8";
+/*
+    LiveBaitShop
+    CIS-130-W01 SU 24
+    William Meyers
+    2024-07-04
+    style.css
+*/
+
+:root {
+    --primary: #F9C474;
+    --dark: #3B2523;
+    --light: #E0AB8E;
+}
+
+
+/* Basic Designs */
+
+body{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary);
+}
+
+header>img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header>h1 {
+    position: absolute;
+    top: 10vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 6.25vw;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 10px 5px 5px var(--dark);
+}
+
+/* nav styles */
+
+nav {
+    display: block;
+    position: absolute;
+    top: 10vw;
+    left: 50%;
+    transform: translate(-225%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 3vw;
+    color: var(--dark);
+    font-variant: small-caps;
+    background-color: var(--light);
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--dark);
+    color: var(--light);
+    text-decoration: none;
+}
+
+nav>ul{
+    list-style-type: none;
+}
+
+
+/* footer styles */
+
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+/* form styles */
+
+.input {
+    white-space: nowrap;
+    width: 100%;
+}
+
+fieldset>div {
+    padding: 10px;
+}
+
+fieldset {
+    width: 80%;
+}
+
+/* image styles */
+
+
+/* flex styles */
+
+.servicesContainer, .baitOrderContainer {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.servicesContainer>div, fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    justify-content: center;
+}
+
+
+/* responsive styles */
+
+@media screen and (max-width: 500px) {
+    .servicesContainer, .baitOrderContainer {
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    
+    .servicesContainer>div, fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    nav {
+        transform: translate(-150%, -50%);
+    }
+
+    header>h1 {
+        transform: translate(0%, -50%);
+    }
+}
