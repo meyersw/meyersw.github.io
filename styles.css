@@ -62,7 +62,8 @@ nav>ul>li {
 }
 
 nav>ul>li:hover,
-ul>li>a:hover,td:hover {
+ul>li>a:hover,
+td:hover {
     background-color: var(--highlight);
     color: var(--light);
     border-color: var(--dark);
@@ -102,24 +103,29 @@ footer {
 }
 
 
-.badge, .projects{
-display: flex;
-margin-left: auto;
-margin-right: auto;
-justify-content: center;
-border: 1px solid;
-box-shadow: 5px 5px 1px var(--dark);
-background-color: white;
+.badge,
+.projects {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: 1px solid;
+    box-shadow: 5px 5px 1px var(--dark);
+    background-color: white;
 }
 
-.projects{
+.projects {
     width: 90%;
     line-height: 1.5em;
 }
 
-table{padding: 1em}
+table {
+    padding: 1em
+}
 
-tr,td,th{
+tr,
+td,
+th {
     border: 1px solid;
     line-height: 1.5em;
     padding: .5em;
@@ -156,8 +162,12 @@ textarea {
 }
 
 
-em{
+em {
     color: var(--highlight);
+}
+
+img#codedotorgsummer24 {
+    width: 90%;
 }
 
 @media screen and (min-width: 600px) {
