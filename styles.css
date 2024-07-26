@@ -97,11 +97,32 @@ footer {
     border: 1px solid;
     padding: 1em;
     margin: 1em;
+    width: 100%;
+}
+
+.badge {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: 1px solid;
+    box-shadow: 5px 5px 1px var(--dark);
+    background-color: white;
+}
+
+fieldset{
+    line-height: 2em;
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
 }
 
 .wireframe {
     width: 100%;
 }
+
 
 @media screen and (min-width: 600px) {
     .aboutme {
